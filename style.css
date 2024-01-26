@@ -206,7 +206,7 @@ main .eventsButton:hover a{
 @media (min-width:600px){
     .bg1{
         background-image: url(images/concert-desktop.png);
-        min-height: 100vh;
+        min-height: 120vh;
         background-size: cover;
     }
     main h1{
