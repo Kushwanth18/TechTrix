@@ -287,6 +287,23 @@ main .eventsButton:hover a{
 
 }
 
+/* css for bg3 */
+.bg3{
+    background-color: #9d0208;
+    min-height: 100vh;
+    padding:5rem 5rem;
+}
+
+.c-item{
+    height: 500px;
+}
+
+.c-img{
+    height: 500px;
+    width: 500px;
+    object-fit: cover;
+}
+
 /* css for bg2 */
 @media (min-width:600px){
     .bg2{
