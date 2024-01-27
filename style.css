@@ -1,6 +1,7 @@
 body{
     margin: 0;
     color: #F2D9D9;
+    background-color: black;
 }
 
 .wrap{
@@ -23,9 +24,10 @@ body{
 header{
     background-color: black;
     display: flex;
+    margin: 0;
     justify-content: space-between;
     align-items: center;
-    padding: 15px 30px;
+    padding: 10px 30px;
     border-radius: 2px;
 }
 
@@ -35,6 +37,21 @@ header{
 
 .header-left a img{
     width: 3em;
+}
+
+.header-left{
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-left h2{
+    margin: 0;
+    padding-left: 30px;
+    align-self: center;
+    font-size: 15px;
+    font-weight: 200;
+    font-family: 'Koulen',sans-serif;
+    color:#E5E5E5;
 }
 
 nav .menu-button img{
@@ -94,10 +111,16 @@ main {
 main h1{
     font-size: 4rem;
     letter-spacing: 3px;
-    margin-top: 6rem;
+    margin-top: 1rem;
     font-family: 'Lilita One',sans-serif;
 }
 
+main h2{
+    font-size: 1.3rem;
+    margin-top: 3rem;
+    font-weight: 700;
+    font-family: 'Roboto Mono',monospace;
+}
 main h3{
     margin-top: -3rem;
     font-size: 3.5rem;
@@ -203,7 +226,7 @@ main .eventsButton:hover a{
 
 /* DEKSTOP CSS */
 /* css for bg1 */
-@media (min-width:600px){
+@media (min-width:680px){
     .bg1{
         background-image: url(images/concert-desktop.png);
         min-height: 100vh;
@@ -212,14 +235,18 @@ main .eventsButton:hover a{
     main h1{
         font-size: 5rem;
         letter-spacing: 4px;
-        margin-top: 4rem;
+        margin-top: 2rem;
         font-family: 'Lilita One',sans-serif;
     }
     
     main{
-        color: #E5E5E5;
+        color: #eff1e5;
     }
-
+    main h2{
+        font-size: 2rem;
+        margin-top:2rem;
+        font-family: 'Roboto Mono',sans-serif;
+    }
     main h3{
         margin-top: -3rem;
         font-size: 4.5rem;
@@ -237,6 +264,7 @@ main .eventsButton:hover a{
     main p{
         font-family: 'Roboto Mono',monospace;
         font-weight: 700;
+        font-size: 1.5rem;
         margin-top: -3.8rem;
     }
     .eventsButton{
@@ -263,7 +291,7 @@ main .eventsButton:hover a{
         margin-left: -5px;
     }
     .header-left h2{
-        padding-left: 2px;
+        padding-left: 15px;
         align-self: center;
         font-size: 15px;
         font-weight: 200;
@@ -287,25 +315,8 @@ main .eventsButton:hover a{
 
 }
 
-/* css for bg3 */
-.bg3{
-    background-color: #6A040F;
-    min-height: 100vh;
-    padding:5rem 5rem;
-}
-
-.c-item{
-    height: 500px;
-}
-
-.c-img{
-    height: 500px;
-    width: 500px;
-    object-fit: cover;
-}
-
 /* css for bg2 */
-@media (min-width:600px){
+@media (min-width:680px){
     .bg2{
         margin-top: -30px;
         min-height: 40vh;
@@ -331,7 +342,7 @@ main .eventsButton:hover a{
 }
 
 /* css for bg1 */
-@media (min-width:930px){
+@media (min-width:1130px){
     .bg1{
         background-image: url(images/concert-desktop.png);
         min-height: 115vh;
@@ -374,6 +385,11 @@ main .eventsButton:hover a{
         letter-spacing: 4px;
         font-family: 'Lilita One',sans-serif;
     }
+    main h2{
+        font-size: 2rem;
+
+        font-family: 'Roboto Mono',sans-serif;
+    }
 
     main h3{
         font-size: 5rem;
@@ -399,7 +415,7 @@ main .eventsButton:hover a{
 }
 
 /* css for bg2 */
-@media (min-width:930px){
+@media (min-width:1130px){
     .bg2{
         min-height: 60vh;
     }
@@ -422,4 +438,26 @@ main .eventsButton:hover a{
     .about-total{
         margin-bottom: 30px;
     }
+}
+
+
+/*loading animation */
+.load{
+    animation: transitionIn 1.5s;
+}
+
+@keyframes transitionIn {
+    from{
+        opacity: 0;
+        transform:translateX(-10px);
+    }
+    to{
+        opacity: 1;
+        transform:translateX(0);
+    }
+}
+
+.bg2 h2{
+    font-size:5rem;
+    text-align: center;
 }

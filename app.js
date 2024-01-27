@@ -23,4 +23,29 @@ const observer = new IntersectionObserver((entries)=>{
 });
 
 const hiddenElements = document.querySelectorAll('.hidden');
-hiddenElements.forEach((el) => observer.observe(el))
+hiddenElements.forEach((el) => observer.observe(el));
+
+
+// Function to handle changes in media query matches
+const headerHeading = document.querySelector('.header-left h2');
+function handleMatches(mediaQuery) {
+    if (mediaQuery.matches) {
+      // Media query matches, execute your JavaScript code here
+      headerHeading.innerHTML = 'Malla Reddy College Of Engineering and Technology';
+      // Trigger your JavaScript functions or perform actions
+    } else {
+      // Media query doesn't match, handle this case if needed
+      headerHeading.innerHTML = 'MRCET';
+    }
+  }
+  
+  // Define media queries to match
+  const mediaQuery = window.matchMedia('(min-width: 680px)');
+  
+  // Call the handler initially
+  handleMatches(mediaQuery);
+  mediaQuery.addEventListener('change',()=>handleMatches(mediaQuery));
+/*   
+  // Add a listener to handle changes
+  mediaQuery.addListener(handleMatches); */
+  

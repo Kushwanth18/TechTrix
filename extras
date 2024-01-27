@@ -1,0 +1,25 @@
+body{
+  margin: 0;
+  background-image: url(images/concert-desktop.png);
+}
+
+h1{
+  text-align: center;
+  margin-top: 3rem;
+  font-size: 5rem;
+  color:  #F2D9D9;
+  font-family: 'Lilita One',sans-serif;
+  font-weight: 400;
+  letter-spacing: 1px;
+  text-decoration: underline dotted;
+}
+
+p{
+  margin-top: 1rem;
+  text-align: center;
+  color:  #F2D9D9;
+  font-weight: 700;
+  font-family: 'Roboto',sans-serif;
+  margin-bottom: 3rem;
+  font-size: 2rem;
+}
