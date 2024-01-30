@@ -263,7 +263,7 @@ main .eventsButton:hover a {
 }
 
 .contact .contacts-row img {
-  height: 70px;
+  width: 4rem;
   border-radius: 20px;
   margin-right: 1.5rem;
 }
@@ -394,6 +394,11 @@ main .eventsButton:hover a {
 
   nav a:hover {
     color: #e6ef92;
+  }
+  .contact .contacts-row img {
+    width: 5rem;
+    border-radius: 20px;
+    margin-right: 1.5rem;
   }
 }
 
@@ -528,6 +533,11 @@ main .eventsButton:hover a {
     font-family: "Roboto Mono", monospace;
     font-weight: 700;
     text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.5);
+  }
+  .contact .contacts-row img {
+    width: 9rem;
+    border-radius: 20px;
+    margin-right: 1.5rem;
   }
 }
 
