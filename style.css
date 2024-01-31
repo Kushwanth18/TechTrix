@@ -270,6 +270,7 @@ main .eventsButton:hover a {
 
 .contact .contacts-row .c1 {
   display: flex;
+  flex-direction: column;
   justify-content: center;
 }
 
@@ -286,12 +287,14 @@ main .eventsButton:hover a {
 }
 .info p {
   font-family: "Roboto Mono";
+  text-align: center;
   font-size: 10px;
 }
 
 .contact .contacts-row .c2 {
   display: flex;
   justify-content: center;
+  flex-direction: column;
 }
 
 .c2 .info h5 {
@@ -395,11 +398,6 @@ main .eventsButton:hover a {
   nav a:hover {
     color: #e6ef92;
   }
-  .contact .contacts-row img {
-    width: 5rem;
-    border-radius: 20px;
-    margin-right: 1.5rem;
-  }
 }
 
 /* css for bg2 */
@@ -449,15 +447,26 @@ main .eventsButton:hover a {
     font-family: "Roboto Mono";
     font-size: 13px;
   }
-
   .contact .contacts-row .c2 {
     display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .contact .contacts-row .c1 {
+    display: flex;
+    flex-direction: row;
     justify-content: center;
   }
 
   .c2 .info h5 {
     font-size: 1.2rem;
     margin-top: 15px;
+  }
+  .contact .contacts-row img {
+    width: 5rem;
+    border-radius: 20px;
+    margin-right: 1.5rem;
   }
 }
 /* css for bg1 */
@@ -535,7 +544,7 @@ main .eventsButton:hover a {
     text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.5);
   }
   .contact .contacts-row img {
-    width: 9rem;
+    width: 7rem;
     border-radius: 20px;
     margin-right: 1.5rem;
   }
