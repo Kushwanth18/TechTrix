@@ -15,7 +15,7 @@ body {
 }
 
 .bg1 {
-  min-height: 90vh;
+  min-height: 110vh;
   background-image: url(images/concert\ 2.png);
   background-size: cover;
   padding-left: 1rem;
@@ -238,10 +238,11 @@ main .eventsButton:hover a {
 
 .contact {
   background-color: #2e0808;
+  display: flex;
+  flex-direction: column;
   min-height: 30vh;
   margin-top: -20px;
   transition: 0.1s ease-in-out;
-  padding-bottom: 50px;
 }
 
 .contact h3 {
@@ -255,52 +256,6 @@ main .eventsButton:hover a {
   margin-left: 2rem;
   font-family: "Lilita One", sans-serif;
   font-weight: 400;
-}
-
-.contact .contacts-row {
-  display: flex;
-  justify-content: space-around;
-}
-
-.contact .contacts-row img {
-  width: 4rem;
-  border-radius: 20px;
-  margin-right: 1.5rem;
-}
-
-.contact .contacts-row .c1 {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.info {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.c1 .info h5 {
-  font-family: "Roboto Mono", monospaced;
-  margin-bottom: 0;
-  margin-top: 15px;
-}
-.info p {
-  font-family: "Roboto Mono";
-  text-align: center;
-  font-size: 10px;
-}
-
-.contact .contacts-row .c2 {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-}
-
-.c2 .info h5 {
-  margin-top: 15px;
-  margin-bottom: 0;
-  font-family: "Roboto Mono", monospaced;
 }
 
 /* DEKSTOP CSS */
@@ -439,41 +394,12 @@ main .eventsButton:hover a {
     margin-left: 2rem;
     font-size: 1.5rem;
   }
-  .c1 .info h5 {
-    font-size: 1.2rem;
-    margin-top: 15px;
-  }
-  .info p {
-    font-family: "Roboto Mono";
-    font-size: 13px;
-  }
-  .contact .contacts-row .c2 {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-  }
-
-  .contact .contacts-row .c1 {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-  }
-
-  .c2 .info h5 {
-    font-size: 1.2rem;
-    margin-top: 15px;
-  }
-  .contact .contacts-row img {
-    width: 5rem;
-    border-radius: 20px;
-    margin-right: 1.5rem;
-  }
 }
 /* css for bg1 */
 @media (min-width: 1150px) {
   .bg1 {
     background-image: url(images/concert-desktop.png);
-    min-height: 115vh;
+    min-height: 90vh;
     background-size: cover;
   }
   header {
@@ -554,7 +480,6 @@ main .eventsButton:hover a {
 @media (min-width: 1150px) {
   .bg2 {
     min-height: 60vh;
-    padding-bottom: 2rem;
   }
 
   .about-box {
@@ -641,4 +566,69 @@ html {
 .dev img {
   filter: invert(1);
   transform: scale(0.7);
+}
+
+.info-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.person {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.person img {
+  height: 100px;
+  border-radius: 10px;
+}
+.person-info {
+  margin-left: 2rem;
+}
+.person-info p {
+  text-align: left;
+  font-family: "Roboto Mono", monospace;
+}
+.person-info h4 {
+  padding-top: 2rem;
+  margin: 0;
+  text-align: left;
+}
+
+@media (min-width: 720px) {
+  .info-wrapper {
+    display: flex;
+    flex-direction: row;
+  }
+  .person {
+    flex-direction: column;
+    margin: 0 auto;
+  }
+  .person img {
+    width: 100px;
+    margin-left: 2rem;
+  }
+}
+
+@media (min-width: 1100px) {
+  .info-wrapper {
+    display: flex;
+    flex-direction: row;
+  }
+  .person {
+    flex-direction: column;
+    margin: 0 auto;
+  }
+  .person img {
+    height: 100px;
+    width: 100px;
+    margin-left: 2rem;
+  }
+  .person p {
+    font-size: 1rem;
+  }
+  .person h4 {
+    font-size: 2rem;
+  }
 }
