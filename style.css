@@ -15,7 +15,7 @@ body {
 }
 
 .bg1 {
-  min-height: 110vh;
+  min-height: 100vh;
   background-image: url(images/concert\ 2.png);
   background-size: cover;
   padding-left: 1rem;
@@ -399,7 +399,7 @@ main .eventsButton:hover a {
 @media (min-width: 1150px) {
   .bg1 {
     background-image: url(images/concert-desktop.png);
-    min-height: 90vh;
+    min-height: 110vh;
     background-size: cover;
   }
   header {
