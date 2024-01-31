@@ -15,7 +15,7 @@ body {
 }
 
 .bg1 {
-  min-height: 80vh;
+  min-height: 100vh;
   background-image: url(images/concert\ 2.png);
   background-size: cover;
   padding-left: 1rem;
